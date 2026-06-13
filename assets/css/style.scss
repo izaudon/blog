@@ -6,10 +6,15 @@ $my-color: #4baafa; // あなたの好きな色
 
 h1, h2, h3, h4, h5, h6,
 header h1, header h2,
-a, hr, th,
+a, th,
 pre, code,
 .tar, .zip {
   color: $my-color !important;
+}
+
+hr {
+  border: 0 !important;
+  border-bottom: 1px solid $my-color !important;
 }
 
 header {
