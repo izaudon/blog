@@ -5,8 +5,6 @@ title: Top
 
 <h2>カテゴリ別 記事一覧</h2>
 
-<p>デバッグ表示: {{ site.category_names }}</p>
-
 {% for category in site.categories %}
   {% assign category_name = category[0] %}
   {% for item in site.category_names %}

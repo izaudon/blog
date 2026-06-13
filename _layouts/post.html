@@ -3,6 +3,40 @@ layout: default
 ---
 
 <h1>{{ page.title }}</h1>
+<p style="color: #666;">📅 {{ page.date | date: "%Y年%m月%d日" }}</p>
+<hr>
 <div class="post-content">
   {{ content }}
 </div>
+
+{% assign current_category = page.categories.first %}
+{% if current_category %}
+  {% assign category_posts = site.categories[current_category] %}
+  {% for post in category_posts %}
+    {% if post.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+      {% assign prev_index = current_index | plus: 1 %}
+      {% assign next_index = current_index | minus: 1 %}
+
+      {% if prev_index < category_posts.size %}
+        {% assign category_prev = category_posts[prev_index] %}
+      {% endif %}
+
+      {% if next_index >= 0 %}
+        {% assign category_next = category_posts[next_index] %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+<hr>
+
+{% if category_prev %}
+  <p><a href="{{ category_prev.url | relative_url }}">\<\< 前の記事: {{ category_prev.title }}</a></p>
+{% endif %}
+
+{% if category_next %}
+  <p><a href="{{ category_next.url | relative_url }}">次の記事: {{ category_next.title }} \>\></a></p>
+{% endif %}
+
+<hr>
