@@ -1,4 +1,6 @@
 title: izaudon's blog
 description: イザベルのブログ
 theme: jekyll-theme-hacker
-markdown: redcarpet
+collections:
+  memo:
+    output: true

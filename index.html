@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h1>Top</h1>
+
+{% for category in site.collections %}
+  {% unless category.label == "posts" or category.label == "pages" %}
+    <h2>{{ category.label | capitalize }}</h2>
+    <ul>
+      {% for item in category.docs %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% endunless %}
+{% endfor %}
