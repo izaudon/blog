@@ -44,4 +44,16 @@ layout: default
   </div>
 </div>
 
+{% unless category_prev or category_next %}
+  <br><br>
+{% endunless %}
+
 <hr>
+
+<p style="text-align: center;">
+  {% if current_category %}
+    <a href="{{ current_category | append: '/' | relative_url }}">⬅️ {{ category_name }}一覧に戻る</a>
+    ---
+  {% endif %}
+  <a href="{{ '/' | relative_url }}">ブログトップに戻る</a>
+</p>
