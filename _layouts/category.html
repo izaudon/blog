@@ -1,0 +1,30 @@
+---
+layout: default
+---
+
+{% assign current_category = page.dir | remove: "/" %}
+{% assign category_name = current_category %}
+
+{% for item in site.category_names %}
+  {% if item[0] == current_category %}
+    {% assign category_name = item[1] %}
+  {% endif %}
+{% endfor %}
+
+<h1>{{ category_name }} の記事一覧</h1>
+
+<ul>
+  {% for post in site.categories[current_category] %}
+    <li>
+      <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> -
+      <a href="{{ post.url| relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
+<hr>
+<p>
+  <a href="{{ '/' | relative_url }}">
+    トップに戻る
+  </a>
+</p>

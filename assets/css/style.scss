@@ -2,7 +2,7 @@
 ---
 @import "jekyll-theme-hacker";
 
-$my-color: #4baafa; // あなたの好きな色
+$my-color: #4baafa;
 
 h1, h2, h3, h4, h5, h6,
 header h1, header h2,
@@ -18,7 +18,7 @@ hr {
 }
 
 header {
-  border-bottom: 1px dashed $my-color !important;
+  border-bottom: 1px solid $my-color !important;
   background-color: #111111 !important;
 }
 
