@@ -1,15 +1,21 @@
 ---
 layout: default
+title: Top
 ---
-<h1>Top</h1>
 
-{% for category in site.collections %}
-  {% unless category.label == "posts" or category.label == "pages" %}
-    <h2>{{ category.label | capitalize }}</h2>
+<h2>記事一覧（カテゴリ別）</h2>
+
+{% for category in site.categories %}
+  <div class="category-section">
+    <h3>📂 {{ category[0] | upcase }}</h3>
+
     <ul>
-      {% for item in category.docs %}
-        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% for post in category[1] %}
+        <li>
+          <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> —
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
       {% endfor %}
     </ul>
-  {% endunless %}
+  </div>
 {% endfor %}
