@@ -31,12 +31,17 @@ layout: default
 
 <hr>
 
-{% if category_prev %}
-  <p><a href="{{ category_prev.url | relative_url }}">\<\< 前の記事: {{ category_prev.title }}</a></p>
-{% endif %}
-
-{% if category_next %}
-  <p><a href="{{ category_next.url | relative_url }}">次の記事: {{ category_next.title }} \>\></a></p>
-{% endif %}
+<div style="display: flex; justify-content: space-between;">
+  <div>
+    {% if category_next %}
+      <p><a href="{{ category_next.url | relative_url }}">次の記事: 「{{ category_next.title }}」 >></a></p>
+    {% endif %}
+  </div>
+  <div>
+    {% if category_prev %}
+      <p><a href="{{ category_prev.url | relative_url }}"><< 前の記事: 「{{ category_prev.title }}」</a></p>
+    {% endif %}
+  </div>
+</div>
 
 <hr>
