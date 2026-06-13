@@ -12,7 +12,7 @@ title: Top
   {% assign category_name = site.category_names[category[category_slug]] | default: category_slug %}
   <div class="category-section">
     <h2>
-      <a href="{{ category[0] | append: '/' | relative_url }}">
+      <a href="{{ category_slug | append: '/' | relative_url }}">
         {{ category_name }}
       </a>
     </h2>
