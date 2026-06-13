@@ -4,22 +4,16 @@ title: memo
 ---
 <h2>記事一覧</h2>
 
-{% for post in site.categories.memo %}
-  <div class="category-section">
-    <h2>{{ category[0] | upcase }}</h2>
-
-    <ul>
-      {% for post in category[1] %}
-        <li>
-          <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> —
-          <a href="{{ post.url| relative_url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-    <p>
-      <a href="{{ '/' | relative_url }}">
-        トップに戻る
-      </a>
-    </p>
-  </div>
-{% endfor %}
+<ul>
+  {% for post in site.categories.memo %}
+    <li>
+      <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> -
+      <a href="{{ post.url| relative_url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+<p>
+  <a href="{{ '/' | relative_url }}">
+    トップに戻る
+  </a>
+</p>

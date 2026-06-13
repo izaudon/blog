@@ -12,7 +12,7 @@ title: Top
     <ul>
       {% for post in category[1] limit: 3 %}
         <li>
-          <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> —
+          <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> -
           <a href="{{ post.url| relative_url }}">{{ post.title }}</a>
         </li>
       {% endfor %}
