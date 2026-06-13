@@ -6,7 +6,7 @@ title: Top
 <h2>カテゴリ別 記事一覧</h2>
 
 {% for category in site.categories %}
-  {% assign category_name = site.category_names[category[0]] | default: category[0] %}
+  {% assign category_name = site.category_names[category[0]] %}
   <div class="category-section">
     <h2>
       <a href="{{ category[0] | append: '/' | relative_url }}">

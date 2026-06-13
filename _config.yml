@@ -3,5 +3,5 @@ description: イザベルのブログ
 theme: jekyll-theme-hacker
 baseurl: "/blog"
 category_names:
-  post_app: いろいろ使い方メモ
-  post_music: 音楽メモ
+  post_app: "いろいろ使い方メモ"
+  post_music: "音楽メモ"
