@@ -1,0 +1,16 @@
+---
+---
+@import "jekyll-theme-hacker";
+
+$my-color: #4baafa; // あなたの好きな色
+
+h1, h2, h3, h4, h5, h6,
+header h1, header h2,
+a,
+pre, code,
+.tar, .zip {
+  color: $my-color !important;
+}
+header {
+  border-bottom: 1px dashed $my-color !important;
+}
