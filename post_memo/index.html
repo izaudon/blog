@@ -1,16 +1,15 @@
 ---
 layout: default
-title: Top
+title: memo
 ---
-
 <h2>記事一覧</h2>
 
-{% for category in site.categories %}
+{% for post in site.categories.memo %}
   <div class="category-section">
     <h2>{{ category[0] | upcase }}</h2>
 
     <ul>
-      {% for post in category[1] limit: 3 %}
+      {% for post in category[1] %}
         <li>
           <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> —
           <a href="{{ post.url| relative_url }}">{{ post.title }}</a>
@@ -18,8 +17,8 @@ title: Top
       {% endfor %}
     </ul>
     <p>
-      <a href="{{ category[0] | append: '/' | relative_url }}">
-        {{category[0] | upcase}} の記事を全て見る
+      <a href="{{ '/' | relative_url }}">
+        トップに戻る
       </a>
     </p>
   </div>

@@ -11,11 +11,17 @@ pre, code,
 .tar, .zip {
   color: $my-color !important;
 }
+
 header {
   border-bottom: 1px dashed $my-color !important;
+  background-color: #111111 !important;
 }
+
+body {
+  background-image: none !important;
+}
+
 ul li{
   list-style-image: none !important;
   list-style-type: disc !important;
-  /*padding-left: 20px !important;*/
 }
