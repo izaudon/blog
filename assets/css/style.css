@@ -2,6 +2,22 @@
 ---
 @import "{{ site.theme }}";
 
-body {
-  color: #4baafa !important;
+$my-color: #4baafa;
+
+h1, h2, h3, h4, h5, h6,
+header h1, header h2,
+a,
+pre, code,
+.tar, .zip {
+  color: $my-color !important;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1),
+               0 0 5px rgba($my-color, 0.2) !important;
+}
+
+header {
+  border-bottom: 1px dashed $my-color !important;
+}
+
+a:hover {
+  color: lighten($my-color, 15%) !important;
 }
