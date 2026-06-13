@@ -1,6 +1,6 @@
 ---
 ---
-@import "{{ site.theme }}";
+@import 'jekyll-theme-hacker';
 
 $my-color: #4baafa;
 
