@@ -3,11 +3,16 @@ layout: default
 title: Top
 ---
 
-<h2>記事一覧</h2>
+<h2>カテゴリ別 記事一覧</h2>
 
 {% for category in site.categories %}
+  {% assign category_name = site.category_names[category[0]] | default: category[0] %}
   <div class="category-section">
-    <h2>{{ category[0] | upcase }}</h2>
+    <h2>
+      <a href="{{ category[0] | append: '/' | relative_url }}">
+        {{ category_name }}
+      </a>
+    </h2>
 
     <ul>
       {% for post in category[1] limit: 3 %}
@@ -18,9 +23,11 @@ title: Top
       {% endfor %}
     </ul>
     <p>
-      <a href="{{ category[0] | append: '/' | relative_url }}">
-        {{category[0] | upcase}} の記事を全て見る
-      </a>
+      <span style="color: #666;">
+        <a href="{{ category[0] | append: '/' | relative_url }}">
+          {{ category_name }} の記事を全て見る
+        </a>
+      </span>
     </p>
   </div>
 {% endfor %}

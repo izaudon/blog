@@ -1,11 +1,12 @@
 ---
 layout: default
-title: memo
+title: いろいろ使い方メモ
 ---
+<h2>いろいろ使い方メモ</h2>
 <h2>記事一覧</h2>
 
 <ul>
-  {% for post in site.categories.post_memo %}
+  {% for post in site.categories.post_app %}
     <li>
       <span style="color: #666;">{{ post.date | date: "%Y/%m/%d" }}</span> -
       <a href="{{ post.url| relative_url }}">{{ post.title }}</a>
