@@ -35,12 +35,15 @@ ul li {
   display: none !important;
 }
 
-p li {
+h1, h2, h3, h4, h5, h6,
+header h1, header h2,
+p, li {
+  font-size: 120% !important;
   line-height: 1.8 !important;
 }
 
 br {
   display: block;
   content: "";
-  margin: 4.0em;
+  margin: 2.0em;
 }
