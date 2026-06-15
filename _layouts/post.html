@@ -53,7 +53,9 @@ layout: default
 <p style="text-align: center;">
   {% if current_category %}
     <a href="{{ current_category | append: '/' | relative_url }}">{{ category_name }}カテゴリに戻る</a>
-    <br>
   {% endif %}
+</p>
+<br>
+<p style="text-align: center;">
   <a href="{{ '/' | relative_url }}">トップに戻る</a>
 </p>
