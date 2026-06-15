@@ -36,17 +36,22 @@ layout: default
     {% if category_next %}
       <p><a href="{{ category_next.url | relative_url }}"><< 次の記事:<br>「{{ category_next.title }}」</a></p>
     {% endif %}
+    {% unless category_prev or category_next %}
+      <p>次の記事はありません</p>
+      <br>
+    {% endunless %}
   </div>
   <div>
     {% if category_prev %}
       <p><a href="{{ category_prev.url | relative_url }}">前の記事: >><br>「{{ category_prev.title }}」</a></p>
     {% endif %}
+    {% unless category_prev or category_next %}
+      <p>前の記事はありません</p>
+      <br>
+    {% endunless %}
   </div>
 </div>
 
-{% unless category_prev or category_next %}
-  <br><br>
-{% endunless %}
 
 <hr>
 
