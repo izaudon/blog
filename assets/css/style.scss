@@ -26,11 +26,16 @@ body {
   background-image: none !important;
 }
 
-ul li{
+ul li {
   list-style-image: none !important;
   list-style-type: disc !important;
 }
 
 #downloads {
   display: none !important;
+}
+
+p li {
+  line-height: 1.8 !important;
+  margin-bottom: 2.0em !important;
 }
