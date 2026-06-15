@@ -3,6 +3,8 @@
 @import "jekyll-theme-hacker";
 
 $my-color: #4baafa;
+$header-color: #04080c;
+$body-color: #10141f;
 
 h1, h2, h3, h4, h5, h6,
 header h1, header h2,
@@ -19,12 +21,12 @@ hr {
 
 header {
   border-bottom: 1px solid $my-color !important;
-  background-color: #10141c !important;
+  background-color: $header-color !important;
 }
 
 body {
   background-image: none !important;
-  background-color: #242936 !important;
+  background-color: $body-color !important;
 }
 
 ul li {
