@@ -42,9 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5em;
+}
 
-  border-bottom: 1px double $my-color !important;
-  padding-bottom: 0.5em !important;
+header h1 {
+  font-size: 2.8em;
 }
 
 h2 {
@@ -52,6 +53,11 @@ h2 {
 
   border-bottom: 1px solid $my-color !important;
   padding-bottom: 0.5em !important;
+}
+
+header h2 {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 
 h3 {
