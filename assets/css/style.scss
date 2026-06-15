@@ -37,5 +37,10 @@ ul li {
 
 p li {
   line-height: 1.8 !important;
-  margin-bottom: 5.0em !important;
+}
+
+br {
+  display: block;
+  content: "";
+  margin: 4.0em;
 }
