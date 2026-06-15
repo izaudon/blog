@@ -35,8 +35,46 @@ ul li {
   display: none !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+
+  border-bottom: 1px double $my-color !important;
+  padding-bottom: 0.5em !important;
+}
+
+h2 {
+  font-size: 2.0em;
+
+  border-bottom: 1px solid $my-color !important;
+  padding-bottom: 0.5em !important;
+}
+
+h3 {
+  font-size: 1.8em;
+
+  border-bottom: 1px dashed $my-color !important;
+  padding-bottom: 0.5em !important;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.3em;
+}
+
+h6 {
+  font-size: 1.2em;
+}
+
 p, li{
-  font-size: 110%;
+  font-size: 1.1em;
   line-height: 2.0;
 }
 
