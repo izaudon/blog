@@ -114,25 +114,25 @@ img {
   counter-reset: h2-counter;
 }
 
-#main_content h2 {
+#main_content .post-content h2 {
   counter-increment: h2-counter;
   counter-reset: h3-counter;
 }
-#main_content h2::before {
+#main_content .post-content h2::before {
   content: counter(h2-counter) ". ";
 }
 
-#main_content h3 {
+#main_content .post-content h3 {
   counter-increment: h3-counter;
   counter-reset: h4-counter;
 }
-#main_content h3::before {
+#main_content .post-content h3::before {
   content: counter(h2-counter) "-" counter(h3-counter) ". ";
 }
 
-#main_content h4 {
+#main_content .post-content h4 {
   counter-increment: h4-counter;
 }
-#main_content h4::before {
+#main_content .post-content h4::before {
   content: counter(h2-counter) "-" counter(h3-counter) "-" counter(h4-counter)". ";
 }
