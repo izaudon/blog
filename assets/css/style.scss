@@ -40,3 +40,9 @@ p, li {
   line-height: 2.0 !important;
   margin-bottom: 2.0em;
 }
+
+br {
+  display: block;
+  content: "";
+  margin: 2em;
+}
