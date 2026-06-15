@@ -7,7 +7,7 @@ layout: default
 ブログ記事や覚え書きなどを掲載します。
 <br><br>
 
-<h2>カテゴリ別 記事一覧</h2>
+<h2>記事カテゴリ 一覧</h2>
 
 {% for category in site.categories %}
   {% assign category_name = category[0] %}
@@ -24,6 +24,8 @@ layout: default
         {{ category_name }}
       </a>
     </h2>
+
+    の最近の記事
 
     <ul>
       {% for post in category[1] limit: 5 %}
