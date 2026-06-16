@@ -2,4 +2,4 @@
 
 Github Pagesを用いたブログ
 
-https://izaudon.github.io/blog/
+  [ブログページ](https://izaudon.github.io/blog/)
