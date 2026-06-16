@@ -3,7 +3,7 @@ layout: post
 title: 音楽理論2 音の機能 ・ 五度圈
 ---
 
-  [前回の記事]({{ "./2026-06-15-music-theory1" | relative_url }})
+  [前回の記事]({{ "./2026-06-15-music-theory1.md" | relative_url }})
 
 ## 音階の音の名前
 前回スケール内の音に数字をつけましたが、それぞれに別名がついています。
