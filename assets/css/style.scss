@@ -43,15 +43,15 @@ ul li {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
-  margin-top: 1.5em;
+  margin-top: 2.0em;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3.0em;
 }
 
 h2 {
-  font-size: 2.0em;
+  font-size: 2.5em;
 
   border-bottom: 1px solid $my-color;
   padding-bottom: 0.5em;
@@ -63,22 +63,22 @@ header h2 {
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: 2.0em;
 
   border-bottom: 1px dashed $my-color;
   padding-bottom: 0.5em;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 
 h5 {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 h6 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 p, li{
@@ -92,7 +92,7 @@ p, li{
 }
 
 p {
-  margin-bottom: 2.0em;
+  margin-top: 2.0em;
 }
 
 a {
