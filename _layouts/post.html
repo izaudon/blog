@@ -37,7 +37,7 @@ layout: default
     {% if category_next %}
       <p><a href="{{ category_next.url | relative_url }}"><< 次の記事:<br>「{{ category_next.title }}」</a></p>
     {% endif %}
-    {% unless category_prev or category_next %}
+    {% unless category_next %}
       <p style="color: #666;">次の記事はありません</p>
       <br>
     {% endunless %}
@@ -46,7 +46,7 @@ layout: default
     {% if category_prev %}
       <p><a href="{{ category_prev.url | relative_url }}">前の記事: >><br>「{{ category_prev.title }}」</a></p>
     {% endif %}
-    {% unless category_prev or category_next %}
+    {% unless category_prev %}
       <p style="color: #666;">前の記事はありません</p>
       <br>
     {% endunless %}
