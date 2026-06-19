@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 音楽理論3 ダイアトニックコードを用いたコード進行
+title: 音楽理論3 コード進行1
 ---
 
   [前回の記事]({{ site.baseurl }}{% post_url 2026-06-16-music-theory2 %})
