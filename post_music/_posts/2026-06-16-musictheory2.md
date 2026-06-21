@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 音楽理論2
+title: 音楽理論2 コード
 ---
 
   [前回の記事]({{ site.baseurl }}{% post_url 2026-06-15-musictheory1 %})
@@ -152,3 +152,5 @@ Cのコードをテンションもりもりにする場合、「C, E, G, B, D」
 
 ## 次回
 次回はコードの機能についての内容です。
+
+  [次回の記事]({{ site.baseurl }}{% post_url 2026-06-17-musictheory3 %})
