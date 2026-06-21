@@ -115,4 +115,4 @@ V7をVaugに代理させて、ルートは裏コードになっています。
 ## 次回
 次回はノンダイアトニックコードを用いたコード進行の話です。
 
-  [次回の記事]({{ site.baseurl }}{% post_url 2026-06-20-music-theory6 %})
+  [次回の記事]({{ site.baseurl }}{% post_url 2026-06-20-musictheory6 %})
