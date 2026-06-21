@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 音楽理論5 セカンダリドミナントとその他のノンダイアトニックコード
+title: 音楽理論6 コード進行2
 ---
 
   [前回の記事]({{ site.baseurl }}{% post_url 2026-06-18-musictheory4 %})
