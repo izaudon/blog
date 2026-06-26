@@ -3,7 +3,7 @@ layout: post
 title: 音楽理論6 コード進行2
 ---
 
-  [前回の記事]({{ site.baseurl }}{% post_url 2026-06-18-musictheory4 %})
+  [前回の記事]({{ site.baseurl }}{% post_url 2026-06-19-musictheory5 %})
 
 
 ## ノンダイアトニックコードを用いたコード進行
@@ -109,4 +109,6 @@ viとIの間には、リレイテッド2のvを挟むことが多いです。
 
 
 ## 次回
-次回は書ききれなかった内容や補足などです。
+次回は転調についてです。
+
+  [次回の記事]({{ site.baseurl }}{% post_url 2026-06-21-musictheory7 %})
